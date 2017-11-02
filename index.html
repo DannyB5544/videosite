@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Ooo yes</title>
+        <meta name="description" content="Full screen background video demo">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oxygen:400,300,700">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Look! Content! -->
+        <div class="content">
+            <p class="content_heading" style="color:#ffffff" align="left">Oooo video!</p>
+            <p class="content_teaser" style="color:#ffffff" align="right">Oi dont look here</p>
+        </div>
+        <video id="my-video" class="video" muted loop>
+            <source src="media/demo.mp4" type="video/mp4">
+            <source src="media/demo.ogv" type="video/ogg">
+            <source src="media/demo.webm" type="video/webm">
+        </video>
+        <script>
+            (function() {
+               var video = document.getElementById("my-video");
+               video.addEventListener( "canplay", function() {
+                video.play();
+                })
+                })()
+        </script>
+    </body>
+</html>
